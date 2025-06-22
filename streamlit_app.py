@@ -164,6 +164,6 @@ with col5:
     corr_subset = corr.loc[cancer_pivot.columns, available_env]  # cancer on y-axis, geospatial on x-axis
 
     st.markdown("<h4 style='text-align: center'>Correlation Matrix</h4>", unsafe_allow_html=True)
-    fig, ax = plt.subplots(figsize=(12, 13))
+    fig, ax = plt.subplots(figsize=(13, 14))
     sns.heatmap(corr_subset, cmap='Blues', annot=True, fmt=".2f", ax=ax, annot_kws={"size": 10})
     st.pyplot(fig)
